@@ -33,3 +33,5 @@ Lassen Sie uns den Code Schritt für Schritt durchgehen:
 11. Der Abschnitt "Beispielaufruf" generiert und gibt 9 Passwörter aus, indem die Funktion `generate_password()` mit spezifischen Argumenten aufgerufen wird.
 
 Es ist wichtig zu beachten, dass der Parameter `exclude_chars` nicht wie beabsichtigt funktioniert, da ihm im Funktionsaufruf der Wert `True` zugewiesen wird. Er sollte auf `False` gesetzt werden, um den Ausschluss von Zeichen zu deaktivieren. Zusätzlich demonstriert der Beispielcode derzeit die Generierung von 9 Passwörtern, jeweils mit einer Länge von 16 Zeichen, einschließlich Zahlen, Sonderzeichen und dem Ausschluss bestimmter Zeichen. Wenn Sie verschiedene Passwörter generieren möchten, sollten Sie die Parameter entsprechend anpassen.
+
+<img src="bilder/readme_001.jpg" alt="Alternativer Text">
