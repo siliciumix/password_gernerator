@@ -1,5 +1,6 @@
 import string
 import random
+import pyperclip
 
 def generate_password(length=12, include_digits=True, include_special_chars=True, exclude_chars=True):
     if length < 8:
@@ -19,9 +20,10 @@ def generate_password(length=12, include_digits=True, include_special_chars=True
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
-# Beispielaufruf
 print()
-for i in range(1,10):
-    password = generate_password(length=16, include_digits=True, include_special_chars=True, exclude_chars=True)
-    print(password)
+print('Das folgende Password wurde in die Zwischenablage geschrieben: ')
+print()
+password = generate_password(length=16, include_digits=True, include_special_chars=True, exclude_chars=True)
+pyperclip.copy(password)
+print(password)
 print()
