@@ -23,7 +23,7 @@ def generate_password(length=12, include_digits=True, include_special_chars=True
 print()
 print('Das folgende Password wurde in die Zwischenablage geschrieben: ')
 print()
-password = generate_password(length=16, include_digits=True, include_special_chars=True, exclude_chars=True)
+password = generate_password(length=28, include_digits=True, include_special_chars=True, exclude_chars=True)
 pyperclip.copy(password)
 print(password)
 print()
