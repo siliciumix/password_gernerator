@@ -4,7 +4,7 @@ import pyperclip
 
 def generate_password(length=12, include_digits=True, include_special_chars=True, exclude_chars=True):
     if length < 8:
-        raise ValueError("Password length should be at least 8 characters.")
+        raise ValueError("Das Passwort sollte mindestens 8 Zeichen lang sein.")
     
     characters = string.ascii_letters
     
